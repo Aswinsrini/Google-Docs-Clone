@@ -23,7 +23,7 @@ const TextEditor = () => {
   const [quill, setQuill] = useState();
 
   useEffect(() => {
-    const s = io("http://localhost:3000");
+    const s = io("https://aswin-docs-clone-backend.onrender.com");
     setSocket(s);
 
     return () => {
