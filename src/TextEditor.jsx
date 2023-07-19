@@ -19,6 +19,7 @@ const TOOLBAR_OPTIONS = [
 
 const TextEditor = () => {
   const { id: documentId } = useParams();
+  console.log(documentId, " it is id");
   const [socket, setSocket] = useState();
   const [quill, setQuill] = useState();
 
