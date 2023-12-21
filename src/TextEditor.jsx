@@ -95,11 +95,17 @@ const TextEditor = () => {
       modules: { toolbar: TOOLBAR_OPTIONS },
     });
     q.disable();
+
     q.setText("Loading...");
+
     setQuill(q);
   }, []);
 
-  return <div className="container" ref={wrapperRef}></div>;
+  return (
+    <div>
+      <div className="container" ref={wrapperRef}></div>;
+    </div>
+  );
 };
 
 export default TextEditor;
