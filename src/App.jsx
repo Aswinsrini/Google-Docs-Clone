@@ -17,7 +17,7 @@ function App() {
           element={<Navigate to={`/documents/${uuidV4()}`} />}
         />
 
-        <Route exact path="/documents/:id/" element={<TextEditor />} />
+        <Route exact path="/documents/:id" element={<TextEditor />} />
       </Routes>
     </Router>
   );
