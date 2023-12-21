@@ -24,7 +24,7 @@ const TextEditor = () => {
   const [quill, setQuill] = useState();
   var connection = "https://aswin-docs-clone-backend.onrender.com";
   useEffect(() => {
-    const s = io("http://localhost:3000");
+    const s = io(connection);
     setSocket(s);
 
     return () => {
