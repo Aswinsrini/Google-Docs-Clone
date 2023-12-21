@@ -6,6 +6,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import { v4 as uuidV4 } from "uuid";
+import Design from "./Design";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           path="/"
           element={<Navigate to={`/documents/${uuidV4()}`} />}
         />
-
+        <Route exact path="/hi/:id" element={<Design />} />
         <Route exact path="/documents/:id" element={<TextEditor />} />
       </Routes>
     </Router>
