@@ -17,9 +17,8 @@ function App() {
           path="/"
           element={<Navigate to={`/documents/${uuidV4()}`} />}
         />
-        <Route path="/hell" element={<Navigate to={`/aswin`} />} />
-        <Route path="/aswin" element={<Design />} />
-        <Route exact path="/:id" element={<TextEditor />} />
+
+        <Route exact path="/:id" element={<Navigate to="/aswin" />} />
         <Route path="/documents/:id" element={<TextEditor />} />
       </Routes>
     </Router>
