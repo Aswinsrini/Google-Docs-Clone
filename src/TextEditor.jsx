@@ -22,9 +22,9 @@ const TextEditor = () => {
   console.log(documentId, " it is id");
   const [socket, setSocket] = useState();
   const [quill, setQuill] = useState();
-
+  var connection = "https://aswin-docs-clone-backend.onrender.com";
   useEffect(() => {
-    const s = io("https://aswin-docs-clone-backend.onrender.com");
+    const s = io("http://localhost:3000");
     setSocket(s);
 
     return () => {
