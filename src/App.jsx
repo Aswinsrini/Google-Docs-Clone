@@ -19,6 +19,7 @@ function App() {
         />
         <Route path="/hell" element={<Navigate to={`/aswin`} />} />
         <Route path="/aswin" element={<Design />} />
+        <Route exact path="/:id" element={<TextEditor />} />
         <Route path="/documents/:id" element={<TextEditor />} />
       </Routes>
     </Router>
